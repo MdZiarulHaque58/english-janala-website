@@ -112,6 +112,17 @@
           আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
           অন্য একটি Level এ
         </p>
+        <fieldset class="fieldset w-xs">
+  <legend class="fieldset-legend"></legend>
+
+  
+  <input type="email" class="input" placeholder="Enter Your Name" />
+
+  <label class="label"></label>
+  <input type="password" class="input" placeholder=".................." />
+
+  <button class="btn btn-primary mt-4">Login</button>
+</fieldset>
       </div>
       <div class="image flex-1">
         <img src="./assets/hero-student.png" alt="" />
@@ -126,6 +137,25 @@
         class="flex gap-5 flex-wrap justify-center"
       ></div>
     </section>
+
+    <section class="flex justify-center py-15">
+      <div class="join">
+  <div>
+    <label class="input validator join-item">
+      
+      <input id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+    </label>
+  
+  </div>
+  <button id="btn-search" class="btn btn-primary join-item">Search</button>
+</div>
+    </section>
+
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-bars loading-xl"></span>
+
+    </section>
+
     <section
       id="word-container"
       class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5"
@@ -139,6 +169,23 @@
         <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
       </div>
     </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-container" class="space-y-5">
+      
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
     <script src="./script/index.js"></script>
   </body>
 </html>
